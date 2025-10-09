@@ -1,0 +1,56 @@
+/* 全体の基本スタイル */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f8fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+h1 {
+  background-color: #0078d7;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+/* 段落 */
+p {
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+/* ボタン */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  button {
+    width: 80%;
+  }
