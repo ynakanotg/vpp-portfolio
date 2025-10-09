@@ -1,4 +1,3 @@
-/* 全体 */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -8,7 +7,6 @@ body {
   text-align: center;
 }
 
-/* ヘッダー */
 header {
   background-color: #0078d7;
   color: white;
@@ -18,9 +16,9 @@ header {
 h1 {
   margin: 0;
   font-size: 2em;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-/* コンテンツ */
 .content {
   max-width: 900px;
   margin: 0 auto;
@@ -30,9 +28,9 @@ h1 {
 p {
   font-size: 1.2em;
   margin: 20px;
+  animation: fadeIn 2s ease-in-out;
 }
 
-/* 画像 */
 img {
   margin: 20px auto;
   display: block;
@@ -40,21 +38,9 @@ img {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: fadeIn 2.5s ease-in-out;
 }
 
-/* フェードイン */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ボタン */
 button {
   padding: 12px 24px;
   background-color: #0078d7;
@@ -63,35 +49,29 @@ button {
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeIn 3s ease-in-out;
 }
 
 button:hover {
   background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+/* ✅ フェードインアニメーション */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ✅ レスポンシブ対応 */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  button {
-    width: 80%;
-    font-size: 1em;
-  }
+  h1 { font-size: 1.5em; }
+  p { font-size: 1em; }
+  button { width: 80%; font-size: 1em; }
 }
 
 @media (max-width: 480px) {
-  h1 {
-    font-size: 1.2em;
-  }
-
-  p {
-    font-size: 0.95em;
-  }
+  h1 { font-size: 1.2em; }
+  p { font-size: 0.95em; }
 }
