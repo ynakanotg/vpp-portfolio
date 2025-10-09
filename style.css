@@ -1,32 +1,41 @@
+/* 全体 */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f8fb;
-  color: #333;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #f4f8fb);
+  color: #333;
   text-align: center;
 }
 
-h1 {
+/* ヘッダー */
+header {
   background-color: #0078d7;
   color: white;
   padding: 20px;
-  margin: 0;
 }
 
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* コンテンツ */
 p {
   font-size: 1.2em;
   margin: 20px;
 }
 
+/* 画像 */
 img {
   margin: 20px auto;
   display: block;
-  max-width: 90%;
-  height: auto;
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* フェードインアニメーション */
+/* フェードイン */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -38,14 +47,16 @@ img {
   transform: translateY(0);
 }
 
+/* ボタン */
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #0078d7;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
