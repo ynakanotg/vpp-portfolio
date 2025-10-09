@@ -1,32 +1,44 @@
-/* 全体の基本スタイル */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f8fb;
   color: #333;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  text-align: center;
 }
 
-/* ヘッダー */
 h1 {
   background-color: #0078d7;
   color: white;
   padding: 20px;
-  text-align: center;
   margin: 0;
 }
 
-/* 段落 */
 p {
-  padding: 20px;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  margin: 20px;
 }
 
-/* ボタン */
-button {
-  display: block;
+img {
   margin: 20px auto;
+  display: block;
+  max-width: 90%;
+  height: auto;
+}
+
+/* フェードインアニメーション */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+button {
   padding: 10px 20px;
   background-color: #0078d7;
   color: white;
@@ -34,23 +46,8 @@ button {
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #005fa3;
 }
-
-/* レスポンシブ対応 */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  button {
-    width: 80%;
-  }
