@@ -1,4 +1,4 @@
-// 画像をフェードイン
+// フェードイン
 document.addEventListener("DOMContentLoaded", () => {
   const img = document.querySelector(".fade-in");
   setTimeout(() => {
@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 500);
 });
 
-// ボタンのクリックイベント
+// ボタン動作
 function showAlert() {
   alert("VPPは再生可能エネルギーの活用を促進します！");
-}
