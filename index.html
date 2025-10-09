@@ -6,21 +6,7 @@
   <meta name="referrer" content="no-referrer">
   <title>VPPとは？</title>
 
-  <!-- ✅ 強化CSP -->
-  <meta http-equiv="Content-Security-Policy"
-      content="
-        default-src 'self';
-        script-src 'self';
-        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-        font-src 'self' https://fonts.gstatic.com;
-        img-src 'self' data: https:;
-        object-src 'none';
-        base-uri 'self';
-        form-action 'self';
-        upgrade-insecure-requests;
-      ">
-
-  <!-- CSS -->
+  <!-- CSSファイルを読み込み -->
   <link rel="stylesheet" href="style.css">
 h1>仮想発電所（VPP）について</h1>
   </header>
@@ -28,6 +14,7 @@ h1>仮想発電所（VPP）について</h1>
   <main>
     <section>
       <p>VPP（Virtual Power Plant）は、分散型エネルギー資源を統合して制御する仕組みです。</p>
+      <!-- 画像を正しく表示 -->
       vpp-diagram.jpg
       <button onclick="showAlert()">もっと知る</button>
     </section>
@@ -37,9 +24,7 @@ h1>仮想発電所（VPP）について</h1>
     <p>&copy; 2025 VPP Portfolio</p>
   </footer>
 
-  <!-- JavaScript -->
+  <!-- JavaScriptファイルを読み込み -->
   script.js</script>
 </body>
 </html>
-
-
