@@ -2,13 +2,41 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VPPとは？</title>
-  style.css
-</head>
-<body>
-  <h1>仮想発電所（VPP）について</h1>
-  <p>VPP（Virtual Power Plant）は、分散型エネルギー資源を統合して制御する仕組みです。</p>
-  <button onclick="showAlert()">もっと知る</button>
+
+  <!-- ✅ 強化CSP -->
+  <meta http-equiv="Content-Security-Policy"
+        content="
+          default-src 'self';
+          script-src 'self';
+          style-src 'self' 'unsafe-inline';
+          img-src 'self' data:;
+          font-src 'self';
+          object-src 'none';
+          base-uri 'self';
+          form-action 'self';
+          upgrade-insecure-requests;
+        ">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+h1>仮想発電所（VPP）について</h1>
+  </header>
+
+  <main>
+    <section>
+      <p>VPP（Virtual Power Plant）は、分散型エネルギー資源を統合して制御する仕組みです。</p>
+      vpp-diagram.png
+      <button onclick="showAlert()">もっと知る</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VPP Portfolio</p>
+  </footer>
+
+  <!-- JavaScript -->
   script.js</script>
 </body>
 </html>
