@@ -1,78 +1,101 @@
+/* 全体 */
+:root {
+  --brand: #0078d7;
+  --brand-dark: #005fa3;
+  --bg: #f4f8fb;
+  --text: #333;
+  --card: #fff;
+  --radius: 12px;
+}
+
+* { box-sizing: border-box; }
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
   margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #e0f7fa, #f4f8fb);
-  color: #333;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+.site-header {
+  background: var(--brand);
+  color: #fff;
+  padding: 16px 12px;
   text-align: center;
 }
 
-header {
-  background-color: #0078d7;
-  color: white;
-  padding: 20px;
-}
-
-h1 {
+.site-header h1 {
   margin: 0;
-  font-size: 2em;
-  animation: fadeIn 1.5s ease-in-out;
+  font-size: 1.8rem;
 }
 
-.content {
-  max-width: 900px;
+.site-nav {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.15);
+}
+
+.site-nav a[aria-current="page"] {
+  background: rgba(255,255,255,0.35);
+  font-weight: 600;
+}
+
+/* レイアウト */
+.container {
+  max-width: 920px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 16px;
 }
 
-p {
-  font-size: 1.2em;
-  margin: 20px;
-  animation: fadeIn 2s ease-in-out;
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
 }
 
-img {
-  margin: 20px auto;
-  display: block;
-  max-width: 80%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  animation: fadeIn 2.5s ease-in-out;
-}
+/* 段落 */
+p { margin: 0 0 12px; font-size: 1.05rem; }
 
+/* ボタン */
 button {
-  padding: 12px 24px;
-  background-color: #0078d7;
-  color: white;
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: var(--brand);
+  color: #fff;
   border: none;
-  border-radius: 5px;
-  font-size: 1em;
+  border-radius: 10px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  animation: fadeIn 3s ease-in-out;
+  transition: background-color 0.2s ease;
 }
 
-button:hover {
-  background-color: #005fa3;
-  transform: scale(1.05);
+button:hover { background-color: var(--brand-dark); }
+
+/* フッター */
+.site-footer {
+  text-align: center;
+  padding: 20px 12px;
+  color: #666;
 }
 
-/* ✅ フェードインアニメーション */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* レスポンシブ（スマホ） */
+@media (max-width: 600px) {
+  .site-header h1 { font-size: 1.4rem; }
+  .container { padding: 12px; }
+  p { font-size: 1rem; }
+  button { width: 100%; }
 }
-
-/* ✅ レスポンシブ対応 */
-@media (max-width: 768px) {
-  h1 { font-size: 1.5em; }
-  p { font-size: 1em; }
-  button { width: 80%; font-size: 1em; }
-}
-
-@media (max-width: 480px) {
-  h1 { font-size: 1.2em; }
-  p { font-size: 0.95em; }
-}
-
