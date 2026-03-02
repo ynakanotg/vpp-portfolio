@@ -2,41 +2,75 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>VPPとは？｜仮想発電所（Virtual Power Plant）の概要</title>
   <meta name="description" content="VPP（仮想発電所）は分散型エネルギー資源を統合・制御し、再生可能エネルギーの活用を促進する仕組みです。概要をわかりやすく紹介します。" />
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS（CDN） -->
+  https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css <!--  -->
 
-  <!-- OGP（SNS共有での見栄え：SEO/UXに寄与） -->
+  <!-- Custom CSS（最小限の上書き用） -->
+  style.css
+
+  <!-- OGP（SNS用宣言） -->
   <meta property="og:title" content="VPPとは？｜仮想発電所（Virtual Power Plant）の概要" />
   <meta property="og:description" content="VPP（仮想発電所）は分散型エネルギー資源を統合・制御する仕組みです。" />
   <meta property="og:type" content="website" />
 </head>
 
 <body>
-  <header class="site-header">
-    <h1>仮想発電所（VPP）について</h1>
-    <nav class="site-nav" aria-label="グローバルナビゲーション">
-      <a href="index.html" aria-current="page">ホーム</a>
-      <a href="join.html">参画する方法</a>
-    </nav>
-  </header>
+  <!-- Navbar（Bootstrapでレスポンシブ対応） -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <div class="container">
+      index.htmlVPP Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="ナビゲーション切替">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <main class="container">
-    <section class="card">
-      <h3>VPP（Virtual Power Plant）とは</h3>
-      <p>VPP（Virtual Power Plant）は、分散型エネルギー資源を統合して制御する仕組みです。</p>
-      <button id="learnMoreBtn" type="button">もっと知る</button>
-    </section>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <div class="navbar-nav ms-auto">
+          index.htmlホーム</a>
+          join.html参画する方法</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9">
+        <div class="card shadow-sm">
+          <div class="card-body p-4">
+            <h1 class="h3 mb-3">仮想発電所（VPP）について</h1>
+
+            <h2 class="h5">VPP（Virtual Power Plant）とは</h2>
+            <p class="mb-3">
+              VPP（Virtual Power Plant）は、分散型エネルギー資源を統合して制御する仕組みです。
+            </p>
+
+            <button id="learnMoreBtn" type="button" class="btn btn-primary">
+              もっと知る
+            </button>
+
+            <hr class="my-4" />
+            <p class="text-muted mb-0">
+              次のページ：join.htmlVPPに参画する方法</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer class="site-footer">
+  <footer class="py-4 text-center text-muted">
     <small>© VPP Portfolio</small>
   </footer>
 
-  <script src="script.js" defer></script>
+  script.jsscript>
+
+  <!-- Bootstrap JS Bundle（Popper含む） -->
+  https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.jsscript> <!--  -->
 </body>
 </html>
-
