@@ -99,3 +99,15 @@ button:hover { background-color: var(--brand-dark); }
   p { font-size: 1rem; }
   button { width: 100%; }
 }
+
+.vpp-image{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* さらにスマホで見栄え調整 :/
+@media (max-width: 600px){
+  .vpp-image{
+    border-radius: 12px;
+  }
+}
